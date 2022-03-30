@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>敖翔飯店</title>
     <link rel="shortcut icon" href="../img/logo.ico">
-    <!-- <meta name='description' content='為您打造就算沒有程式基礎，也能夠逐步學習獲得網頁排版技巧的紮實觀念，六角學院的講師將協助您成就更好的自己！'/>
-    <meta property="og:title" content="六角學院"/>
-    <meta property="og:description" content="打破影音課程售後不理，我們在線上等著你。">
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://www.hexschool.com/"/>
-    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/web%2Fevents%2F2019-js-starter%2Ffb-cover.png?alt=media&token=6d679c21-c0aa-454a-ad16-78c55b91dd50"/> -->
+    <meta name='description' content='檸檬味的夏天。' />
+    <meta property="og:title" content="檸夏" />
+    <meta property="og:description" content="檸檬味的夏天。">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://heyviehuang.github.io/flyHotel/" />
+    <meta property="og:image" content="https://upload.cc/i1/2022/03/29/YAaDVv.png" />
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&amp;display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -22,31 +22,31 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/all.js"></script>
 </head>
 
 <body>
-    <div class="container">
-        <header class="navFixed">
-            <h1>
-                <a class="logo" href="index.html">敖翔飯店</a>
-            </h1>
-            <nav class="navBar">
-                <ul class="navList wrap">
-                    <li><a href="html/roomMenu.html">房型介紹</a></li>
-                    <li><a href="html/bookNow.html">立即訂房</a></li>
-                    <li><a href="#">會員登入</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header class="navFixed">
+        <h1>
+            <a class="logo" href="index.html">敖翔飯店</a>
+        </h1>
+        <nav class="navBar">
+            <ul class="navList wrap">
+                <li><a href="html/roomMenu.html">房型介紹</a></li>
+                <li><a href="html/bookNow.html">立即訂房</a></li>
+                <li><a href="#">會員登入</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <main>
-            <section class="banner-swiper">
-                <img class="swiper-slide" src="img/img-banner-1.png" alt="">
-                <div class=" swiper-pagination"></div>
-            </section>
-            <section class="index-story wrap">
+    <main>
+        <section class="banner">
+            <img src="img/img-banner-1.png" alt="banner">
+        </section>
+        <div class="wrap">
+            <section class="index-story">
                 <img src="img/img-index-story.png" alt="背景故事封面">
                 <div class="index-story-content">
                     <div class="sectionTitle">
@@ -58,55 +58,50 @@
                 </div>
             </section>
             <section class="index-view">
-                <div class="sectionTitle wrapFullR">
+                <div class="sectionTitle">
                     <h3>景觀</h3>
-                    <svg width="100%">
+                    <svg>
                     <polyline points="0,40 20,20 1465,20"/></svg>
                 </div>
                 <!-- Swiper -->
-                <div class="index-view-swiperContainer wrapFullR">
-                    <div class="index-view-swiper">
-                        <div class="swiper-wrapper">
-                            <img class="swiper-slide" src="img/img-index-view1.png" alt="景觀1">
-                            <img class="swiper-slide" src="img/img-index-view2.png" alt="景觀2">
-                            <img class="swiper-slide" src="img/img-index-view3.png" alt="景觀3">
-                            <img class="swiper-slide" src="img/img-index-view4.png" alt="景觀4">
-                        </div>
-                        <div class=" swiper-pagination"></div>
+                <div class="swiper index-viewSwiper">
+                    <div class="swiper-wrapper">
+                        <img class="swiper-slide" src="img/img-index-view1.png" alt="景觀1">
+                        <img class="swiper-slide" src="img/img-index-view2.png" alt="景觀2">
+                        <img class="swiper-slide" src="img/img-index-view3.png" alt="景觀3">
+                        <img class="swiper-slide" src="img/img-index-view4.png" alt="景觀4">
                     </div>
                 </div>
             </section>
             <section class="index-roomStyle">
-                <div class="sectionTitle wrapFullR">
+                <div class="sectionTitle">
                     <h3>房型</h3>
                     <svg>
                     <polyline points="0,40 20,20 1465,20"/></svg>
                 </div>
-                <ul class="wrap">
+                <ul>
                     <li class="index-roomStyle-item1">
-                        <img src="img/img-index-room1.png" alt="精緻客房">
+                        <div class="roomStyle-item1-decorativeLine">
+                            <img src="img/img-index-room1.png" alt="精緻客房">
+                        </div>
                         <div class="index-roomStyle-content">
                             <h4>精緻客房</h4>
                             <p>精緻客房採光良好與空間寬敞，附有加大雙人床、頂級羽絨被、獨立浴池與乾濕分離的淋浴間，讓您可以盡情在氤氳水氣，洗滌一天的疲憊感，帶給您最舒適的住宿體驗。</p>
-                            <div class="btn-hex btn-hollow">
-                                <a href="html/roomDetails.html">查看詳情</a>
-                            </div>
+                            <a class="btn-hexHollow" href="html/roomDetails.html">查看詳情</a>
                         </div>
                     </li>
                     <li class="index-roomStyle-item2">
-                        <img src="img/img-index-room2.png" alt="豪華客房">
+                        <div class="roomStyle-item2-decorativeLine">
+                            <img src="img/img-index-room2.png" alt="豪華客房">
+                        </div>
                         <div class="index-roomStyle-content">
                             <h4>豪華客房</h4>
                             <p>豪華客房不僅附有加大雙人床與其他高級訂製傢俱，還配有豪華獨立浴池，與提供精選沐浴組，讓您可以沐浴在放鬆的香氣中，享受一夜好眠。</p>
-                            <div class="btn-hex btn-hollow">
-                                <a href="html/roomDetails.html">查看詳情</a>
-                            </div>
+                            <a class="btn-hexHollow" href="html/roomDetails.html">查看詳情</a>
                         </div>
                     </li>
                 </ul>
-                <div class="btn-hex btn-solid wrap">
-                    <a href="html/roomMenu.html">前往目錄</a>
-                </div>
+                <a class="btn-btnToMenu btn-solid" href="html/roomMenu.html">前往目錄</a>
             </section>
             <section class="index-contact">
                 <div class="sectionTitle">
@@ -141,27 +136,26 @@
                     </li>
                 </ul>
             </section>
-        </main>
-        <footer class="footer">
-            <h2>
-                <a class="footerLogo" href="index.html">敖翔飯店</a>
-            </h2>
-            <ul class="footerContact">
-                <li>
-                    Copyright © 2022 flyhotel.All rights reserved.
-                </li>
-                <li>
-                    關於我們┃聯絡我們┃個人資料保護和隱私政策┃智慧財產權聲明
-                </li>
-            </ul>
-        </footer>
+        </div>
+    </main>
+    <footer class="footer">
+        <h2>
+            <a class="footerLogo" href="index.html">敖翔飯店</a>
+        </h2>
+        <ul class="footerContact">
+            <li>
+                Copyright © 2022 flyhotel.All rights reserved.
+            </li>
+            <li>
+                關於我們┃聯絡我們┃個人資料保護和隱私政策┃智慧財產權聲明
+            </li>
+        </ul>
+    </footer>
 
 
-        <a href="#" class="btnTop">
-            <span class="material-icons md-48">expand_less</span>
-        </a>
-    </div>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <a href="#" class="btnTop">
+        <span class="material-icons md-48">expand_less</span>
+    </a>
 </body>
 
 </html>

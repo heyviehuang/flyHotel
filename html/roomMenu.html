@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>敖翔飯店</title>
     <link rel="shortcut icon" href="../img/logo.ico">
-    <!-- <meta name='description' content='為您打造就算沒有程式基礎，也能夠逐步學習獲得網頁排版技巧的紮實觀念，六角學院的講師將協助您成就更好的自己！'/>
-    <meta property="og:title" content="六角學院"/>
-    <meta property="og:description" content="打破影音課程售後不理，我們在線上等著你。">
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://www.hexschool.com/"/>
-    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/web%2Fevents%2F2019-js-starter%2Ffb-cover.png?alt=media&token=6d679c21-c0aa-454a-ad16-78c55b91dd50"/> -->
+    <meta name='description' content='檸檬味的夏天。' />
+    <meta property="og:title" content="檸夏" />
+    <meta property="og:description" content="檸檬味的夏天。">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://heyviehuang.github.io/flyHotel/" />
+    <meta property="og:image" content="https://upload.cc/i1/2022/03/29/YAaDVv.png" />
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&amp;display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -22,30 +22,30 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="../js/all.js"></script>
 </head>
 
 <body>
-    <div class="container">
-        <header class="navFixed">
-            <h1>
-                <a class="logo" href="../index.html">敖翔飯店</a>
-            </h1>
-            <nav class="navBar">
-                <ul class="navList wrap">
-                    <li><a href="../html/roomMenu.html">房型介紹</a></li>
-                    <li><a href="../html/bookNow.html">立即訂房</a></li>
-                    <li><a href="#">會員登入</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header class="navFixed">
+        <h1>
+            <a class="logo" href="../index.html">敖翔飯店</a>
+        </h1>
+        <nav class="navBar">
+            <ul class="navList wrap">
+                <li><a href="../html/roomMenu.html">房型介紹</a></li>
+                <li><a href="../html/bookNow.html">立即訂房</a></li>
+                <li><a href="#">會員登入</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <main>
-            <section class="banner-swiper">
-                <img class="swiper-slide" src="../img/img-banner-1.png" alt="">
-                <div class=" swiper-pagination"></div>
-            </section>
+    <main>
+        <section class="banner">
+            <img src="../img/img-banner-1.png" alt="banner">
+        </section>
+        <div class="wrap">
             <section class="roomMenu-List">
                 <div class="sectionTitle">
                     <svg class="titleLineL">
@@ -55,7 +55,7 @@
                     <polyline points="0,40 20,20 1465,20"/></svg>
                 </div>
 
-                <ul class="roomMenu-btnList wrap">
+                <ul class="roomMenu-btnList">
                     <li class="roomMenu-btnList-item">
                         <img class="" src="../img/img-roomMenu-room1.png" alt="精緻客房">
                         <div class="roomMenu-btnList-item-content">
@@ -81,30 +81,26 @@
                         </div>
                     </li>
                 </ul>
-
-                <div class="btn-imgBG wrap">
-                    <a href="../html/bookNow.html">立即訂房</a>
-                </div>
+                <a class="btn-imgBG" href="../html/bookNow.html">立即訂房</a>
             </section>
-        </main>
-        <footer class="footer">
-            <h2>
-                <a class="footerLogo" href="../index.html">敖翔飯店</a>
-            </h2>
-            <ul class="footerContact">
-                <li>
-                    Copyright © 2022 flyhotel.All rights reserved.
-                </li>
-                <li>
-                    關於我們┃聯絡我們┃個人資料保護和隱私政策┃智慧財產權聲明
-                </li>
-            </ul>
-        </footer>
-        <a href="#" class="btnTop">
-            <span class="material-icons md-48">expand_less</span>
-        </a>
-    </div>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        </div>
+    </main>
+    <footer class="footer">
+        <h2>
+            <a class="footerLogo" href="../index.html">敖翔飯店</a>
+        </h2>
+        <ul class="footerContact">
+            <li>
+                Copyright © 2022 flyhotel.All rights reserved.
+            </li>
+            <li>
+                關於我們┃聯絡我們┃個人資料保護和隱私政策┃智慧財產權聲明
+            </li>
+        </ul>
+    </footer>
+    <a href="#" class="btnTop">
+        <span class="material-icons md-48">expand_less</span>
+    </a>
 </body>
 
 </html>
