@@ -48,7 +48,6 @@ button {
 .roomMenu-List,
 .roomDetails-mainContent,
 .roomDetails-descriptionList,
-.roomDetails-roomPic,
 .bookNow-date,
 .bookNow-List {
     margin-top: 240px;
@@ -534,6 +533,12 @@ footer {
     margin: 0 48px;
 }
 
+.index-contact-icon li:hover {
+    -webkit-filter: saturate(200%);
+    /* Safari */
+    filter: saturate(200%);
+}
+
 
 /* roomMenu-main */
 
@@ -611,7 +616,9 @@ footer {
     border-bottom: 2px solid #EAD6B2;
 }
 
-.roomDetails-roomPic {}
+.roomDetails-roomPic {
+    margin-top: 88px;
+}
 
 .roomDetails-roomPicSwiper .swiper-slide {
     width: 404px;
@@ -640,4 +647,38 @@ footer {
     margin-bottom: 32px;
     font-size: 24px;
     color: #FFD9AC;
+}
+
+
+/* animated */
+
+.animated-t,
+.animated-r,
+.animated-b,
+.animated-l,
+.animated-m {
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+.animated-t {
+    transform: translateY(50px);
+}
+
+.animated-r {
+    transform: translateX(50px);
+}
+
+.animated-b {
+    transform: translateY(-50px);
+}
+
+.animated-l {
+    transform: translateX(-50px);
+}
+
+.fadeIn {
+    opacity: 1;
+    transform: translateX(0);
+    transform: translateY(0);
 }
