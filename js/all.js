@@ -1,22 +1,37 @@
 $(document).ready(function() {
-    $('.btnTop').click(function(event) {
-        event.preventDefault();
-        $('html,body').animate({
-            scrollTop: 0
-        }, 700);
-    });
-
-    $('#bookNow-date-checkIn, #bookNow-date-checkOut').datepicker();
-
-    var swiper = new Swiper(".index-viewSwiper", {
-        slidesPerView: 3,
+    var swiper = new Swiper(".bannerSwiper", {
         spaceBetween: 30,
-        freeMode: true,
-        // pagination: {
-        //     el: ".swiper-pagination",
-        //     clickable: true,
-        // },
+        centeredSlides: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
     });
+
+    var mm = window.matchMedia("(max-width: 600px)");
+    mm.addListener(resizeWidth);
+    resizeWidth(mm);
+
+    function resizeWidth(pMatchMedia) {
+        if (pMatchMedia.matches) {
+            var swiper = new Swiper(".index-viewSwiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                freeMode: true,
+            });
+        } else {
+            var swiper = new Swiper(".index-viewSwiper", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                freeMode: true,
+            });
+        }
+    }
+
     var swiper = new Swiper(".roomDetails-roomPicSwiper", {
         slidesPerView: 3,
         spaceBetween: 20,
@@ -26,6 +41,7 @@ $(document).ready(function() {
         //     clickable: true,
         // },
     });
+
 
     $(window).scroll(function() {
         var scrollPos = $(window).scrollTop();
@@ -39,5 +55,12 @@ $(document).ready(function() {
             }
         });
     });
+    $('.btnTop').click(function(event) {
+        event.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 700);
+    });
+    $('#bookNow-date-checkIn, #bookNow-date-checkOut').datepicker();
 
 });
