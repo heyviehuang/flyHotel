@@ -42,16 +42,6 @@ $(document).ready(function() {
         }
     }
 
-    var swiper = new Swiper(".roomDetails-roomPicSwiper", {
-        slidesPerView: 3,
-        spaceBetween: 20,
-        freeMode: true,
-        // pagination: {
-        //     el: ".swiper-pagination",
-        //     clickable: true,
-        // },
-    });
-
     $(window).scroll(function() {
         var scrollPos = $(window).scrollTop();
         var windowHeight = $(window).height();
