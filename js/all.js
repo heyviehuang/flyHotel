@@ -12,7 +12,7 @@ $(document).ready(function() {
         },
     });
 
-    var mm = window.matchMedia("(max-width: 600px)");
+    var mm = window.matchMedia("(max-width: 768px)");
     mm.addListener(resizeWidth);
     resizeWidth(mm);
 
@@ -20,13 +20,23 @@ $(document).ready(function() {
         if (pMatchMedia.matches) {
             var swiper = new Swiper(".index-viewSwiper", {
                 slidesPerView: 1,
-                spaceBetween: 30,
+                spaceBetween: 20,
+                freeMode: true,
+            });
+            var swiper = new Swiper(".roomDetails-roomPicSwiper", {
+                slidesPerView: 1,
+                spaceBetween: 20,
                 freeMode: true,
             });
         } else {
             var swiper = new Swiper(".index-viewSwiper", {
                 slidesPerView: 3,
-                spaceBetween: 30,
+                spaceBetween: 20,
+                freeMode: true,
+            });
+            var swiper = new Swiper(".roomDetails-roomPicSwiper", {
+                slidesPerView: 3,
+                spaceBetween: 20,
                 freeMode: true,
             });
         }
@@ -42,7 +52,6 @@ $(document).ready(function() {
         // },
     });
 
-
     $(window).scroll(function() {
         var scrollPos = $(window).scrollTop();
         var windowHeight = $(window).height();
@@ -55,12 +64,13 @@ $(document).ready(function() {
             }
         });
     });
+
     $('.btnTop').click(function(event) {
         event.preventDefault();
         $('html,body').animate({
             scrollTop: 0
         }, 700);
     });
-    $('#bookNow-date-checkIn, #bookNow-date-checkOut').datepicker();
 
+    $('#bookNow-date-checkIn, #bookNow-date-checkOut').datepicker();
 });

@@ -33,11 +33,6 @@ button {
     border: none;
 }
 
-.roomDetails-banner {
-    position: relative;
-    width: 100%;
-}
-
 
 /* common spacing */
 
@@ -366,20 +361,23 @@ footer {
     color: #fff;
 }
 
-.banner {
+.banner,
+.roomDetails-banner {
     position: relative;
     height: 90vh;
     border-bottom: 3px #E0C6A1 solid;
 }
 
 @media(max-width:768px) {
-    .banner {
+    .banner,
+    .roomDetails-banner {
         height: 60vh;
     }
 }
 
 @media(max-width:415px) {
-    .banner {
+    .banner,
+    .roomDetails-banner {
         height: 45vh;
     }
     .banner-title {
@@ -747,10 +745,16 @@ footer {
 
 /* roomDetails-main */
 
+.roomDetails-banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .roomDetails-BnTitle {
     position: absolute;
     right: 10%;
-    bottom: 10%;
+    bottom: 6%;
     z-index: 99;
     font-size: 40px;
     color: #FFFFFF;
@@ -760,7 +764,7 @@ footer {
 .roomDetails-bookBtnPriceTxt {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end
+    align-items: flex-end;
 }
 
 .PriceTxt {
@@ -776,7 +780,7 @@ footer {
     color: #FFFFFF;
     position: relative;
     border: 1px #E0C6A1 solid;
-    padding: 64px;
+    padding: 48px 5%;
 }
 
 .roomDetails-descriptionList-item {
@@ -799,6 +803,37 @@ footer {
 .roomDetails-roomPicSwiper .swiper-slide {
     width: 404px;
     height: 404px;
+}
+
+@media(max-width:768px) {
+    .roomDetails-banner-img {
+        object-position: 20% 50%;
+    }
+    .roomDetails-bookBtnPriceTxt {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .PriceTxt {
+        margin-top: 40px;
+    }
+}
+
+@media(max-width:415px) {
+    .roomDetails-descriptionList {
+        flex-direction: column;
+        align-items: center;
+    }
+    .roomDetails-descriptionList-item {
+        width: 100%;
+    }
+    .roomDetails-descriptionList-item:first-child {
+        margin-bottom: 48px;
+    }
+    .roomDetails-BnTitle {
+        font-size: 32px;
+    }
 }
 
 
