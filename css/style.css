@@ -196,6 +196,7 @@ p {
 }
 
 .btnTop {
+    display: none;
     position: fixed;
     bottom: 1%;
     right: 1%;
@@ -209,7 +210,7 @@ p {
 
 .btn-count {
     display: flex;
-    width: 100%;
+    margin: 40px auto 0;
 }
 
 .btn-count-minus,
@@ -233,7 +234,7 @@ p {
     flex: 1;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 50px;
     background-color: #FFF3DB;
     color: #6A1817;
     font-size: 24px;
@@ -708,8 +709,7 @@ footer {
     outline: 1px solid #E0C6A1;
 }
 
-.roomMenu-btnList-item-content,
-.bookNow-roomList-item-content {
+.roomMenu-btnList-item-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -842,22 +842,50 @@ footer {
 .bookNow-date-form {
     display: flex;
     justify-content: center;
-    padding: 48px;
+    padding: 64px;
     background: -webkit-linear-gradient(#CDB892, #F6E3C0, #F6E3C0);
     background: -moz-linear-gradient(#CDB892, #F6E3C0, #F6E3C0);
     background: -o-linear-gradient(#CDB892, #F6E3C0, #F6E3C0);
 }
 
+.bookNow-roomList-item-content {
+    width: 100%;
+    padding: 64px;
+    background-color: rgba(0, 0, 0, 0.64);
+}
+
 .bookNow-equipment {
     color: #FFF;
+}
+
+.bookNow-equipment>li:first-child {
     margin-bottom: 16px;
 }
 
 .bookNow-price {
-    margin-top: 32px;
-    margin-bottom: 32px;
+    margin-top: 40px;
     font-size: 24px;
     color: #FFD9AC;
+    font-style: italic;
+}
+
+@media(max-width:1000px) {
+    .bookNow-date-form {
+        display: flex;
+        flex-direction: column;
+    }
+    .bookNow-date-form .form-item {
+        margin-bottom: 24px;
+    }
+    .bookNow-date-form>li:last-child {
+        margin-bottom: 0;
+    }
+    .bookNow-roomList-img {
+        width: 100%;
+        height: 320px;
+        object-fit: cover;
+        object-position: 30% 60%;
+    }
 }
 
 

@@ -62,5 +62,14 @@ $(document).ready(function() {
         }, 700);
     });
 
+    function showBtnCondition() {
+        if ($(this).scrollTop() > 1200) {
+            $('.btnTop').fadeIn();
+        } else {
+            $('.btnTop').fadeOut();
+        }
+    }
+    $(window).scroll(showBtnCondition);
+
     $('#bookNow-date-checkIn, #bookNow-date-checkOut').datepicker();
 });
