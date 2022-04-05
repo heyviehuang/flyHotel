@@ -62,6 +62,16 @@ $(document).ready(function() {
         }, 700);
     });
 
+    $('.navList-btn-login').click(function(event) {
+        event.preventDefault();
+        $('.login-window').toggleClass('login-window-fadeIn');
+    });
+
+    $('.btnClose').click(function(event) {
+        event.preventDefault();
+        $('.login-window').removeClass('login-window-fadeIn');
+    });
+
     function showBtnCondition() {
         if ($(this).scrollTop() > 1200) {
             $('.btnTop').fadeIn();

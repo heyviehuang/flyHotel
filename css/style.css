@@ -31,6 +31,7 @@ img {
 button {
     cursor: pointer;
     border: none;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 
@@ -112,6 +113,16 @@ p {
     color: #FFF;
 }
 
+.material-icons {
+    background-color: #CFA378;
+    color: #fff;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+    padding: 4px
+}
+
 
 /* common button */
 
@@ -166,7 +177,8 @@ p {
 
 .btn-hexHollow,
 .btn-imgBG,
-.btn-dash {
+.btn-dash,
+.btn-solid-90 {
     color: #EAD6B2;
 }
 
@@ -174,7 +186,8 @@ p {
     color: #4E2F0B;
 }
 
-.btn-hexHollow:hover {
+.btn-hexHollow:hover,
+.btn-solid-90:hover {
     -webkit-filter: saturate(200%);
     /* Safari */
     filter: saturate(200%);
@@ -278,21 +291,26 @@ p {
 
 /* common form */
 
+.bookNow-date-form,
+.login-form-main {
+    padding: 32px;
+    border: 1px #E0C6A1 solid;
+}
+
 .form-item {
     display: flex;
     flex: 1;
     flex-direction: column;
-    margin-right: 16px;
 }
 
-.form-item>label {
+.form-label {
     margin-bottom: 8px;
-    color: #4E2F0B;
+    color: #ffffff;
     font-weight: bold;
 }
 
-.form-item>input,
-.form-item>select {
+.form-input,
+.form-select {
     padding: 8px;
     color: #4E2F0B;
     background-color: #FFF3DB;
@@ -301,7 +319,7 @@ p {
 }
 
 
-/* header */
+/* header & banner*/
 
 .header {
     position: relative;
@@ -346,11 +364,14 @@ footer {
 .navList {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
     margin: 0 auto;
 }
 
-.navList a {
+.navList-btn-roomMenu,
+.navList-btn-bookNow,
+.navList-btn-login {
     padding: 16px 0;
     white-space: nowrap;
     color: #4E2F0B;
@@ -358,7 +379,9 @@ footer {
     font-size: 20px;
 }
 
-.navList a:hover {
+.navList-btn-roomMenu:hover,
+.navList-btn-bookNow:hover,
+.navList-btn-login:hover {
     color: #fff;
 }
 
@@ -367,6 +390,82 @@ footer {
     position: relative;
     height: 90vh;
     border-bottom: 3px #E0C6A1 solid;
+}
+
+
+/* login */
+
+.login-window {
+    display: none;
+    position: absolute;
+    padding: 8%;
+    background-color: rgb(0, 0, 0, .7);
+    top: 0;
+    left: 0;
+    z-index: -150;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all .5s;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.login-window-fadeIn {
+    display: block;
+    transform: translateX(0);
+    z-index: 0;
+    opacity: 1;
+}
+
+.btnClose {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.login-window>h4 {
+    text-align: center;
+}
+
+.login-form-main .form-item {
+    margin-bottom: 24px;
+}
+
+.login-form-main>li:last-child {
+    margin-bottom: 0px;
+}
+
+.btn-solid-90 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border: 1px #E0C6A1 solid;
+    background: url("../img/img-BG-chalkboard.png");
+    font-size: 24px;
+    transition: .2s;
+}
+
+.btn-login {
+    background-color: #EAD6B2;
+    background-image: none;
+    color: #4E2F0B;
+    border: 1px #CFA378 solid;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btn-container>li {
+    width: 48%;
 }
 
 @media(max-width:768px) {
@@ -383,6 +482,9 @@ footer {
     }
     .banner-title {
         font-size: 24px;
+    }
+    .login-window {
+        width: 100%;
     }
 }
 
@@ -436,15 +538,6 @@ footer {
 
 .footerContact>li:first-child {
     margin-bottom: 16px;
-}
-
-.material-icons {
-    background-color: #CFA378;
-    color: #fff;
-}
-
-.material-icons.md-48 {
-    font-size: 48px;
 }
 
 .footerContact-btnList {
@@ -841,11 +934,14 @@ footer {
 
 .bookNow-date-form {
     display: flex;
-    justify-content: center;
-    padding: 64px;
-    background: -webkit-linear-gradient(#CDB892, #F6E3C0, #F6E3C0);
-    background: -moz-linear-gradient(#CDB892, #F6E3C0, #F6E3C0);
-    background: -o-linear-gradient(#CDB892, #F6E3C0, #F6E3C0);
+}
+
+.bookNow-date-form .form-item {
+    margin-right: 16px;
+}
+
+.bookNow-date-form>li:last-child {
+    margin-right: 0;
 }
 
 .bookNow-roomList-item-content {
@@ -875,6 +971,7 @@ footer {
         flex-direction: column;
     }
     .bookNow-date-form .form-item {
+        margin-right: 0;
         margin-bottom: 24px;
     }
     .bookNow-date-form>li:last-child {

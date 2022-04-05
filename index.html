@@ -34,11 +34,39 @@
         </h1>
         <nav class="navBar">
             <ul class="navList wrap">
-                <li><a href="html/roomMenu.html">房型介紹</a></li>
-                <li><a href="html/bookNow.html">立即訂房</a></li>
-                <li><a href="#">會員登入</a></li>
+                <li><button class="navList-btn-login">會員登入</button>
+                    <section class="login-window">
+                        <button class="btnClose material-icons md-48">close
+                        </button>
+                        <h4>會員登入</h4>
+                        <form autocomplete="off">
+                            <ul class="login-form-main">
+                                <li class="form-item">
+                                    <label class="form-label" for="login-username">帳號</label>
+                                    <input id="login-username" class="form-input" name="login-username" type="text" placeholder="請輸入帳號">
+                                </li>
+                                <li class="form-item">
+                                    <label class="form-label" for="login-password">密碼</label>
+                                    <input id="login-password" class="form-input" name="login-password" type="password" placeholder="請輸入密碼">
+                                </li>
+                            </ul>
+                            <input class="btn-solid-90 btn-login" type="submit" value="立即登入">
+                            <ul class="btn-container">
+                                <li>
+                                    <a class="btn-solid-90" href="#">註冊帳號</a>
+                                </li>
+                                <li>
+                                    <a class="btn-solid-90" href="#">忘記密碼</a>
+                                </li>
+                            </ul>
+                        </form>
+                    </section>
+                </li>
+                <li><a class="navList-btn-roomMenu" href="html/roomMenu.html">房型介紹</a></li>
+                <li><a class="navList-btn-bookNow" href="html/bookNow.html">立即訂房</a></li>
             </ul>
         </nav>
+
     </header>
 
     <main>
@@ -166,9 +194,9 @@
             </li>
         </ul>
     </footer>
-    <a href="#" class="btnTop">
-        <span class="material-icons md-48">expand_less</span>
-    </a>
+    <button class="btnTop material-icons md-48">
+        expand_less
+    </button>
 </body>
 
 </html>
