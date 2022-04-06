@@ -219,7 +219,6 @@ p {
 .btn-hexHollow:hover,
 .btn-solid-90:hover {
     -webkit-filter: saturate(200%);
-    /* Safari */
     filter: saturate(200%);
 }
 
@@ -234,7 +233,6 @@ p {
 
 .btn-imgBG:hover {
     -webkit-filter: saturate(200%);
-    /* Safari */
     filter: saturate(200%);
 }
 
@@ -815,7 +813,6 @@ footer {
 
 .index-contact-icon li:hover {
     -webkit-filter: saturate(200%);
-    /* Safari */
     filter: saturate(200%);
 }
 
