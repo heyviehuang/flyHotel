@@ -55,13 +55,6 @@ $(document).ready(function() {
         });
     });
 
-    $('.btnTop').click(function(event) {
-        event.preventDefault();
-        $('html,body').animate({
-            scrollTop: 0
-        }, 700);
-    });
-
     $('.navList-btn-login').click(function(event) {
         event.preventDefault();
         $('.login-window').toggleClass('login-window-fadeIn');
@@ -70,6 +63,13 @@ $(document).ready(function() {
     $('.btnClose').click(function(event) {
         event.preventDefault();
         $('.login-window').removeClass('login-window-fadeIn');
+    });
+
+    $('.btnTop').click(function(event) {
+        event.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 700);
     });
 
     function showBtnCondition() {
