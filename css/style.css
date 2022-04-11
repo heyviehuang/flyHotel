@@ -59,9 +59,20 @@ img {
 }
 
 button {
+    display: block;
+    padding: 0;
     border: none;
+    border-radius: 0;
     background-color: rgba(0, 0, 0, 0);
     cursor: pointer;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 
