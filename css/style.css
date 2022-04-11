@@ -69,10 +69,18 @@ button {
 
 input[type="button"],
 input[type="submit"],
-input[type="reset"] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+input[type="select"] {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: #6A1817;
 }
 
 
