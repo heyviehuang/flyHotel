@@ -256,7 +256,6 @@ p {
 }
 
 .btnTop {
-    display: none;
     position: fixed;
     right: 1%;
     bottom: 1%;
@@ -468,6 +467,10 @@ footer {
     position: absolute;
     top: 16px;
     right: 16px;
+}
+
+.btnClose:hover {
+    background-color: #9e6b34;
 }
 
 .login-window>h4 {
