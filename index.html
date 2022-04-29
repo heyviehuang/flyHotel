@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh-Hant">
 
 <head>
     <meta charset="UTF-8">
@@ -14,17 +14,11 @@
     <meta property="og:url" content="https://heyviehuang.github.io/flyHotel/" />
     <meta property="og:image" content="https://upload.cc/i1/2022/03/29/YAaDVv.png" />
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&amp;display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
-
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="js/all.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -34,9 +28,9 @@
         </h1>
         <nav class="navBar">
             <ul class="navList wrap">
-                <li><button class="navList-btn-login">會員登入</button>
+                <li><button class="navList-btn-login" type="button">會員登入</button>
                     <section id="style-scroll" class="login-window">
-                        <button class="btnClose material-icons md-48">close
+                        <button class="btnClose material-icons md-48" type="button">close
                         </button>
                         <h4>會員登入</h4>
                         <form autocomplete="off">
@@ -194,9 +188,14 @@
             </li>
         </ul>
     </footer>
-    <button class="btnTop material-icons md-48" style="display: none;">
+    <button class="btnTop material-icons md-48" type="button" style="display: none;">
         expand_less
     </button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/all.js"></script>
 </body>
 
 </html>
